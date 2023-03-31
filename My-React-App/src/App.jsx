@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import PokemonCard from './components/PokemonCard';
+import PropTypes from 'prop-types';
+
 
 
 function App() {
@@ -8,7 +10,7 @@ function App() {
 
   return (
     <div>
-      <PokemonCard pokemon={pokemonList[1]} />
+      <PokemonCard pokemon={pokemonList[0]} />
     </div>
   )
 }
