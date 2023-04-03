@@ -11,9 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +24,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -33,10 +36,95 @@
   }
 }
 
+.masterDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .card {
   padding: 2em;
 }
 
 .read-the-docs {
   color: #888;
+}
+
+.PokemonCard {
+  height: 40em;
+  width: 30em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid white;
+  border-radius: 15px;
+  transition: 0.3s ease-in-out;
+  background-color: rgb(117, 253, 55);
+  box-shadow: 0px 1px 12px 4px;
+}
+
+.PokemonCardImg {
+
+  width: 25em;
+  background: white;
+  border-radius: 16px 16px 16px 16px;
+  margin: 1.5rem;
+  box-shadow: 0 0 11px 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.BulbasaurCase {
+  padding: 1.5em 0;
+  margin: 1.5em;
+  width: 25em;
+  text-transform: uppercase;
+  background: white;
+  border-radius: 15px;
+  color: grey;
+  box-shadow: 0 0 11px 5px white;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.PokemonCard:hover {
+  scale: 1.05;
+  box-shadow: 0 0 15px 9px white;
+}
+
+.PokemonCardImg:hover {
+  filter: drop-shadow(0 0 2em grey);
+  scale: 0.9;
+  box-shadow: 0 0 15px 9px white;
+}
+
+.BulbasaurCase:hover {
+  scale: 0.9;
+  box-shadow: 0 0 15px 9px white;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btnIndexSelector {
+  padding: 1.5em 0;
+  margin: 1.5em;
+  width: 8rem;
+  text-transform: uppercase;
+  background: rgb(35, 171, 255);
+  border-radius: 15px;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 11px 5px white;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+
+}
+
+.btnIndexSelector:hover {
+  scale: 1.05;
+  box-shadow: 0 0 15px 9px white;
+
 }

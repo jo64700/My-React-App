@@ -1,22 +1,21 @@
 import React from 'react';
 
 
-
-
-function NavBar({ count, setCount, pokemonList }) {
-
-    const handleClickNext = () => {
-        setCount(count + 1)
-    }
-    const handleClickPrevious = () => {
-        setCount(count - 1)
+function NavBar({ index, pokemonList }) {
+    const handlePokemonClick = (index) => {
+        setCount(index);
     }
 
     return (
-        <div>
-            {count > 0 ? <button onClick={handleClickPrevious}>précédant</button> : <button>dernier</button>}
-            {count < pokemonList.length - 1 ? <button onClick={handleClickNext}>suivant</button> : <button>Fin</button>}
-        </div>
+        <div className='btnContainer'>
+
+            {pokemonList.map((pokemon, index) => (
+                <button key={pokemon.index} onClick={() => handlePokemonClick(index)}>{pokemon.name}</button>
+            ))}
+
+
+
+        </div >
     )
 }
 
