@@ -4,6 +4,7 @@ import PokemonCard from './components/PokemonCard';
 import NavBar from './components/NavBar';
 
 
+
 const pokemonList = [
   {
     name: "bulbasaur",
@@ -45,7 +46,7 @@ function App() {
   pokemonList[count].name === "pikachu" ? alert("pika pika pikachu !!!") : ""
 
   return (
-    <div>
+    <div className='masterDiv'>
       <PokemonCard name={pokemonList[count].name} imgSrc={pokemonList[count].imgSrc} />
       <NavBar count={count} setCount={setCount} pokemonList={pokemonList} />
     </div>
